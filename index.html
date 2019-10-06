@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		section{height: 850px; position: relative; 
+			font-family: 'Noto Sans KR', sans-serif; color:black;}
+		img{position: absolute;}
+
+		@keyframes op1{
+			from{top:300px; opacity: 0;}
+			to{top:200px; opacity: 1;}
+		}
+		@keyframes op2{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
+		@keyframes op3{
+			from{opacity: 1;}
+			to{opacity: 0;}
+		}
+		
+		#monitor{position: fixed; background-color: black;
+		 top: 0; right: 0; padding: 5px;
+		 width: 100px; height: 20px;
+		 color: yellow;}
+
+		#t1{width: 600px; position: absolute; left: 150px; top: 200px;
+			font-size: 50px; opacity: 0;
+			font-weight: bold; display: inline-block;}
+		#t2{width: 600px; position: absolute; left: 150px; top: 300px;
+			font-size: 28px; opacity: 0; 
+			font-weight: bold; display: inline-block; line-height: 28pt;
+			color: gray;}
+		#t3{width: 600px; position: absolute; left: 550px; top: 100px;
+			font-size: 50px; opacity: 0; 
+			font-weight: bold; display: inline-block;}
+		#t4{width: 600px; position: absolute; left: 550px; top: 200px;
+			font-size: 28px; opacity: 0; 
+			font-weight: bold; display: inline-block; line-height: 28pt;
+			color: gray;}
+		#t5{width: 700px; position: absolute; left: 550px; top: 250px;
+			font-size: 50px; opacity: 0;
+			font-weight: bold; display: inline-block;
+			font-family: 'Noto Sans KR', sans-serif; color:black;}
+		#t6{width: 600px; position: absolute; left: 550px; top: 550px;
+			font-size: 28px; opacity: 0;
+			font-weight: bold; display: inline-block; line-height: 28pt;
+			color: gray;
+			font-family: 'Noto Sans KR', sans-serif; }
+		#t7{width: 600px; position: absolute; left: 900px; top: 300px;
+			font-size: 50px; opacity: 0; 
+			font-weight: bold; display: inline-block;}
+		#t8{width: 600px; position: absolute; left: 900px; top: 400px;
+			font-size: 28px; opacity: 0; 
+			font-weight: bold; display: inline-block; line-height: 28pt;
+			color: gray;}
+		#t9{width: 600px; position: absolute; left: 700px; top: 700px;
+			font-size: 50px; opacity: 1; 
+			font-weight: bold; display: inline-block; line-height: 28pt;
+			color: black;}
+		#t10{width: 600px; position: absolute; left: 550px; top: 800px;
+			font-size: 28px; opacity: 1; 
+			font-weight: bold; display: inline-block; line-height: 28pt;
+			color: gray;}
+		
+		#a{background: url(all1.png); 
+			background-attachment: fixed; background-size: cover;}
+		#b{background: url(all2.png); 
+			background-attachment: fixed; background-size: cover;}
+		#c{background: url(all3.png); 
+			background-attachment: fixed; background-size: cover;}
+
+		.color{width: 400px; top: 100px; left: 200px; opacity: 0;}
+		.col{width: 400px;}
+
+	</style>
+	<title>converse</title>
+</head>
+<body>
+	<section>
+		<img src="logo.png" 
+		style="width: 700px; left: 500px; top: 250px; position: fixed;" 
+		id="logo">
+	</section>
+	<section>
+		<img src="hired.png"
+		style="width: 900px; left: 730px; opacity: 0;" 
+		id="hired">
+		<div id="t1">
+		All About Converse
+		</div>
+		<div id="t2">
+		캐주얼한 느낌부터 독특한 디자인까지,<br>
+		남여노소가 만족할 수 있는 <br>
+		converse만의 매력을 느껴보자.
+		</div>
+	</section>
+	<section>
+		<img src="1.png" class="color" style="transform: rotate(20deg);left: 60px; width: 420px;" id="con1">
+		<img src="2.png" class="color" style="transform: rotate(-40deg);top: 500px; left: 200px;" id="con2">
+		<img src="3.png" class="color" style="transform: rotate(-100deg);top: 620px; left: 450px;width: 480px;" id="con3">
+		<img src="4.png" class="color" style="transform: rotate(-130deg);top: 540px; left: 780px; width: 500px;" id="con4">
+		<img src="5.png" class="color" style="transform: rotate(-150deg);top: 250px; left: 950px; width: 540px;" id="con5">	
+		<img src="6.png" class="color" style="transform: rotate(-200deg);left: 1100px; width: 450px; " id="con6" >
+		<div id="t3">
+		원하는 색이 무엇이든.
+		</div>
+		<div id="t4">
+		클래식한 블랙부터 <br> 부드러운 파스텔 컬러, <br>채도 높은 원색까지. <br>
+		분위기에 맞춰 바꿔신을 수 있는 컨버스.
+		</div>
+	</section>
+	<section style="height: 300px;"></section>
+	<section id="a">
+		<div id="t5" ">
+	정석적인 디자인이 지루하다면.
+	</section>
+	<section id="b"></section>
+	<section id="c">
+		<div id="t6" > 
+	매번 새롭게 출시하는 다양한 스타일.<br>
+	패턴, 스타일, 텍스처 모두.
+	</section>
+	
+	
+	</div>
+	<section>
+		<div id="t7">사이즈에 상관없이 즐겁게.</div>
+		<div id="t8">220mm부터 280mm까지의 <br>넓은 사이즈 폭으로 <br>
+		걱정없는 신발 선택.</div>
+		<img src="small.png" style="width: 400px; left: 80px; opacity: 0;" id="small">
+		<img src="medium.png" style="width: 600px; left: 80px; opacity: 0;" id="medium">
+		<img src="big.png" style="width: 700px; top: 400px; left: 80px; opacity: 0;" id="big">
+		
+	</section>
+	<section style="height: 2400px;">
+		<div id="t9">거침없는 변화</div>
+		<div id="t10">다양한 브랜드와의 콜라보로 매번 새로워진 컨버스로!</div>
+		<img src="col1.jpg" class="col" style="top: 200px; opacity: 0" id="col1">
+		<img src="col2.jpg" class="col" style="top: 500px; right: 0px; opacity: 0" id="col2">
+		<img src="col3.jpg" class="col" style="top: 330px; left: 700px; opacity: 0" id="col3">
+		<img src="col4.jpeg" class="col" style="top: 700px; left: 100px; opacity: 0" id="col4">
+		<img src="col5.jpg" class="col" style="top: 1000px; left: 800px; opacity: 0" id="col5">
+		<img src="col6.png" class="col" style="top: 1100px;left: 300px; opacity: 0" id="col6">
+		<img src="col7.jpg" class="col" style="top: 1300px; opacity: 0" id="col7">
+		<img src="col8.jpg" class="col" style="top: 1500px;left: 600px; opacity: 0" id="col8">
+		<img src="col9.jpg" class="col" style="top: 1800px;right: 0px; opacity: 0" id="col9">
+		<img src="col10.jpg" class="col" style="top: 1200px;left: 1100px; opacity: 0" id="col10">
+	</section>
+	<section style="height: 300px; background-color: black; font-size: 15px; color: white; font-weight: lighter;">
+		<a href="https://www.converse.co.kr">
+			<img src="logo copy.png" style="height: 200px; left: 620px; top: 50px;" >
+			</a>
+	<div style="left: 650px; top:250px; position: absolute;">
+	Copyrightⓒ2019 moonkyunga All rights reserved.</div>
+	</section>
+
+	<div id="monitor"></div>
+	<script type="text/javascript">
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+
+		if(t > 500){logo.style.animation = "op3 0s forwards";}
+		else{logo.style.animation = "";}
+
+		if(t > 550){hired.style.animation = "op2 1s forwards";}
+		else{hired.style.animation = "";}
+	
+		if(t > 600){t1.style.animation = "op1 1s forwards";}
+		else{t1.style.animation = "";}
+
+		if(t > 600){t2.style.animation = "op2 0s forwards";}
+		else{t2.style.animation = "";}
+
+		if(t > 1100){t3.style.animation = "op2 0.5s forwards";}
+		else{t3.style.animation = "";}
+
+		if(t > 1100){t4.style.animation = "op2 0.5s forwards";}
+		else{t4.style.animation = "";}
+
+		if(t > 1300){con1.style.animation = "op2 0.5s forwards";}
+		else{con1.style.animation = "";}
+		if(t > 1400){con2.style.animation = "op2 0.5s forwards";}
+		else{con2.style.animation = "";}
+		if(t > 1500){con3.style.animation = "op2 0.5s forwards";}
+		else{con3.style.animation = "";}
+		if(t > 1600){con4.style.animation = "op2 0.5s forwards";}
+		else{con4.style.animation = "";}
+		if(t > 1700){con5.style.animation = "op2 0.5s forwards";}
+		else{con5.style.animation = "";}
+		if(t > 1800){con6.style.animation = "op2 0.5s forwards";}
+		else{con6.style.animation = "";}
+
+		if(t > 2200){t5.style.animation = "op2 0.5s forwards";}
+		else{t5.style.animation = "";}
+		if(t > 3800){t6.style.animation = "op2 0.5s forwards";}
+		else{t6.style.animation = "";}
+
+		if(t > 4800){small.style.animation = "op2 0.5s forwards";}
+		else{small.style.animation = "";}
+		if(t > 4900){medium.style.animation = "op2 0.5s forwards";}
+		else{medium.style.animation = "";}
+		if(t > 5000){big.style.animation = "op2 0.5s forwards";}
+		else{big.style.animation = "";}
+
+		if(t > 5200){t7.style.animation = "op2 0.5s forwards";}
+		else{t7.style.animation = "";}
+		if(t > 5200){t8.style.animation = "op2 0.5s forwards";}
+		else{t8.style.animation = "";}
+
+		if(t > 5200){t9.style.animation = "op2 0.5s forwards";}
+		else{t7.style.animation = "";}
+		if(t > 5200){t10.style.animation = "op2 0.5s forwards";}
+		else{t8.style.animation = "";}
+
+		if(t > 5900){col1.style.animation = "op2 0.5s forwards";}
+		else{col1.style.animation = "";}
+		if(t > 6100){col2.style.animation = "op2 0.5s forwards";}
+		else{col2.style.animation = "";}
+		if(t > 6300){col3.style.animation = "op2 0.5s forwards";}
+		else{col3.style.animation = "";}
+		if(t > 6400){col4.style.animation = "op2 0.5s forwards";}
+		else{col4.style.animation = "";}
+		if(t > 6600){col5.style.animation = "op2 0.5s forwards";}
+		else{col5.style.animation = "";}
+		if(t > 6800){col6.style.animation = "op2 0.5s forwards";}
+		else{col6.style.animation = "";}
+		if(t > 6900){col7.style.animation = "op2 0.5s forwards";}
+		else{col7.style.animation = "";}
+		if(t > 7200){col8.style.animation = "op2 0.5s forwards";}
+		else{col8.style.animation = "";}
+		if(t > 7200){col9.style.animation = "op2 0.5s forwards";}
+		else{col9.style.animation = "";}
+		if(t > 7400){col10.style.animation = "op2 0.5s forwards";}
+		else{col10.style.animation = "";}
+
+
+
+
+
+	}
+	</script>
+
+</body>
+</html>
